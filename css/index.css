@@ -134,3 +134,19 @@ html,
 body {
   height: 100%;
 }
+.container {
+  width: 99%;
+  border: 1 px solid black;
+}
+header {
+  margin: 0.25rem;
+  padding: 0.5rem;
+  background-color: lightgray;
+  display: flex;
+  justify-content: flex-end;
+}
+header nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
