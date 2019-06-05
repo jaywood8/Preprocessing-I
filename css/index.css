@@ -133,20 +133,96 @@ table {
 html,
 body {
   height: 100%;
+  font-family: 'Kumar One Outline', cursive;
+  background-color: crimson;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Kumar One Outline', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 .container {
-  width: 99%;
-  border: 1 px solid black;
+  width: 100%;
+  /* TB LR */
+  margin: 0 auto;
+  padding: 5px 5px 5px 5px;
+}
+h1 {
+  font-size: 4rem;
+  color: crimson;
+}
+h2 {
+  font-size: 3rem;
+  color: white;
+}
+h3 {
+  font-size: 2rem;
 }
 header {
   margin: 0.25rem;
-  padding: 0.5rem;
+  height: 2.5rem;
+  border-bottom: 1px solid black;
   background-color: lightgray;
   display: flex;
   justify-content: flex-end;
 }
 header nav {
   width: 50%;
+  background-color: black;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+.top-content {
+  display: flex;
+  flex-direction: column;
+}
+.top-content .top-2-col {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.top-content .main-img {
+  padding: 1.5rem;
+  border-right: 2px solid black;
+}
+.top-content .top-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+}
+.top-content .top-right .my-name {
+  text-align: center;
+}
+.top-content .top-right .my-title {
+  text-align: center;
+}
+.top-content .top-right button {
+  height: 150%;
+  width: 130%;
+  background-color: red;
+  color: black;
+  border-radius: 1000px 0px 1000px 0px;
+  text-align: center;
+}
+.top-content .top-right button :hover {
+  background-color: gray;
+}
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottom-content h3 {
+  border-bottom: 2 px solid black;
 }
