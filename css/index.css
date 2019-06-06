@@ -1,1 +1,322 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+}
+h1,
+h2 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+.container {
+  width: 100%;
+  /* TB LR */
+  margin: 0 0 1% 0;
+}
+/* Mixins */
+.bordered {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+}
+.nav-items {
+  text-decoration: none;
+  color: white;
+  font-size: 0.75rem;
+}
+h1 {
+  font-size: 300%;
+  color: crimson;
+}
+h2 {
+  font-size: 2rem;
+  color: white;
+}
+h3 {
+  font-size: 2rem;
+}
+header {
+  height: 3rem;
+  border-bottom: 3px solid red;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.25%;
+}
+@media (max-width: 500px) {
+  header {
+    height: 10rem;
+  }
+}
+header nav {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.75rem;
+}
+@media (max-width: 500px) {
+  header nav a {
+    font-size: 1rem;
+    border-bottom: 0.5px dotted white;
+    margin: 0.5rem;
+  }
+}
+.top-content {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  margin: 1rem;
+}
+.top-content .top-2-col {
+  width: 80%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+}
+@media (max-width: 500px) {
+  .top-content .top-2-col {
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+  }
+}
+.top-content .top-2-col .main-img {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+.top-content .top-2-col .top-right {
+  width: 90%;
+  font-size: 90%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: CENTER;
+  background-color: black;
+}
+.top-content .top-2-col .top-right .my-name {
+  padding: 1rem;
+  text-align: center;
+}
+.top-content .top-2-col .top-right .my-title {
+  display: flex;
+  text-align: center;
+  padding: 1rem;
+}
+.top-content .top-2-col .top-right button {
+  height: 150%;
+  width: 130%;
+  background-color: red;
+  color: black;
+  border-radius: 1000px 0px 1000px 0px;
+  text-align: center;
+}
+.bottom-content {
+  display: flex;
+  justify-content: center;
+}
+.bottom-content .bottom-2-col {
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-2-col {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottom-content .bottom-2-col .skills {
+    margin-bottom: 0.5rem;
+  }
+}
+.bottom-content .bottom-2-col .skills {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40%;
+  background-color: lightgrey;
+}
+.bottom-content .bottom-2-col .about-me {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  width: 49%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+ul {
+  list-style: square inside url("sqpurple.gif");
+  margin: 1% 0 0 5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul li {
+  margin-bottom: 5%;
+}
+.work-history {
+  margin: 2rem;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  padding: 1rem;
+}
+.work-history .work-history-row {
+  margin: 1rem;
+  border-bottom: 1px dotted black;
+  padding-bottom: 1rem;
+}
+.contact {
+  margin: 2rem;
+}
+footer {
+  text-align: center;
+}
